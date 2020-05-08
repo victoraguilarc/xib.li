@@ -10,9 +10,7 @@ from apps.contrib.views.errors import error_400, error_403, error_404, error_500
 
 from django.contrib import admin
 
-admin.site.site_header = 'Sawi'
-admin.site.site_title = 'Sawi Admin'
-admin.site.index_title = 'Sawi Admin'
+admin.site.site_header = 'xib.li'
 
 urlpatterns = [
     # Django ADMIN
@@ -25,8 +23,9 @@ urlpatterns = [
     path('api/', include('apps.accounts.api.urls', namespace='api-accounts')),  # api
     path('', include('apps.accounts.urls', namespace='accounts')),  # transactions
 
-    # Sync
-    path('health/', include('health_check.urls')),
+    path('api/', include('apps.shortener.api.urls', namespace='api-shortener')),
+    path('', include('apps.shortener.urls', namespace='shortener')),
+
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

@@ -1,16 +1,10 @@
-## DRF API StarterKit
+## Xibli
 
+xib.li is a simplee custom url shortener witth a powerful ApI
 
 ![styleguide](https://img.shields.io/badge/styleguide-flake8-blue)
 ![Coverage](web/badges/coverage.svg) 
 
-
-#### Features
-
-  - [x] Registration
-  - [x] Autthentication
-  - [x] Social Networks Support (Facebook/Google).
-   
 
 ## Development
 

@@ -83,6 +83,7 @@ django-split-settings==1.0  # https://github.com/sobolevn/django-split-settings
 django-health-check==3.12.1  # https://github.com/KristianOellegaard/django-health-check
 boto3==1.12.36  # https://github.com/boto/boto3
 oscrypto==1.2.0  # https://github.com/wbond/oscrypto
+hashids==1.2.0  # https://github.com/davidaurelio/hashids-python
 
 #
 # T I M E Z O N E S

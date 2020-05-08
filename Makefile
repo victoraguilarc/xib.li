@@ -75,7 +75,7 @@ loaddata:
 
 fixtures:
 	@echo "Loading fixtures..."
-	$(COMPOSE) run --rm django python manage.py loaddata groups users users_prod_cdmx operators_prod_cdmx bases checklist_templates checklist_items firmware_versions
+	$(COMPOSE) run --rm django python manage.py loaddata users
 
 dumpdata:
 	@echo "Getting fixtures..."
@@ -132,7 +132,7 @@ restart: stop up
 
 clean_volumes:
 	@echo "Cleaning volumes ..."
-	docker volume ls -q | grep sawi | xargs docker volume rm
+	docker volume ls -q | grep xibli | xargs docker volume rm
 	docker images | grep "^<none>" | awk '{print $3}' | xargs docker rmi
 
 show_urls:
